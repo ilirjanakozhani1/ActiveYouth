@@ -1,91 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="icon" href="images/logoactiveyouth.png">
     <title>Active Youth</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="icon" href="images/logoactiveyouth.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <!--=====HEADER=====-->
-    <header class="header">
-        <nav class="navbar navbar-style">
-            <div class="container">
-            <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon ">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    
-                </button>
-               <a href=""><img src="images/logoactiveyouth.png" alt="logo" class="logo"></a> 
-                </div>
-
-                <div class="collapse navbar-collapse" id="micon">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="pages/about.html" target="_blank">About</a></li>
-                        <li><a href="pages/gym.html" target="_blank">Programs</a></li>
-                        <li><a href="pages/contact.html" target="_blank">Contact</a></li>
+    
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logoactiveyouth.png"></a>
+                <div class="nav-links " id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="pages/about.html">ABOUT</a></li>
+                        <li><a href="pages/programs.html">PROGRAMS</a></li>
+                        <li><a href="pages/contact.html">CONTACT</a></li>
                     </ul>
                 </div>
-               
+                <i class="fa fa-bars" onclick="showMenu()" ></i>
+            </nav>
 
+            <div class="text-box">
+                <h1>All Youth Activities</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Itaque quis beatae possimus reprehenderit, saepe facilis? 
+                    <br>Omnis sint facere quibusdam nesciunt magnam explicabo eaque excepturi deleniti voluptates, 
+                    reiciendis provident nam illo.</p>
+                    <a href="" class="hero-btn">Visit Us </a>
+            </div>
+        </section>
+
+        <!---------PART2-->
+        <section class="activities">
+            <h1>Activities we offer</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id maxime necessitatibus corporis. Modi assumenda voluptates dolorem optio nihil. Asperiores accusantium deserunt quibusdam. </p>
+            
+            <div class="row">
+                <div class="activities-col">
+                    <h3>Sport</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Eaque deserunt enim odio cum minus laboriosam iusto blanditiis deleniti 
+                         sint eum doloremque repellat molestias vero atque nostrum, 
+                        temporibus cupiditate in voluptatem.</p>
+                </div>
+                <div class="activities-col">
+                    <h3>Kultur</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Eaque deserunt enim odio cum minus laboriosam iusto blanditiis deleniti 
+                         sint eum doloremque repellat molestias vero atque nostrum, 
+                        temporibus cupiditate in voluptatem.</p>
+                </div>
+                <div class="activities-col">
+                    <h3>Art</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Eaque deserunt enim odio cum minus laboriosam iusto blanditiis deleniti 
+                         sint eum doloremque repellat molestias vero atque nostrum, 
+                        temporibus cupiditate in voluptatem.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--------CAMPUSE-->
+        <section class="campus">
+            <h1>Our Training Campus</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Ullam, sint minus. </p>
+
+                <div class="row">
+                    <div class="campus-col">
+                        <img src="images/foto1.jpg" alt="">
+                        <div class="layer">
+                            <h3>PRISHTINA</h3>
+                        </div>
+                    </div>
+                    <div class="campus-col">
+                        <img src="images/foto1.jpg" alt="">
+                        <div class="layer">
+                            <h3>PRIZREN</h3>
+                        </div>
+                    </div>
+                    <div class="campus-col">
+                        <img src="images/foto1.jpg" alt="">
+                        <div class="layer">
+                            <h3>MITROVICA</h3>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <!-------FACILITIES------>
+
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/foto2.jpg">
+                    <h3>World Class Library</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/foto2.jpg">
+                    <h3>Largest Play Ground</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/foto2.jpg">
+                    <h3>Music</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-------TESTIMONIALS----->
+        <section class="testimonials">
+            <h1>What our activist says</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="images/foto1.jpg">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consectetur, iste excepturi, veniam similique, tenetur perferendis itaque laboriosam nemo temporibus beatae? </p>
+                        <h3>Rona Gashi</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="images/foto2.jpg">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consectetur, iste excepturi, veniam similique, tenetur perferendis itaque laboriosam nemo temporibus beatae? </p>
+                        <h3>Blerta Bytyqi</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---Call To Action------->
+        <section class="cta">
+            <h1>Any title here Lorem ipsum dolor sit amet consectetur </h1>
+            <a href="" class="hero-btn">CONTACT US </a>
+        </section>
+
+        <!------FOOTER------>
+        <section class="footer">
+            <h4>About us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rerum possimus .</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
             </div>
             
-        </nav>
-        </header>
-        <!--======HERO IMAGE=====-->
-        <div class="main-title">
-            <div class="main-text">
-                <h1>Lose fat, get fit, have fun</h1>
+        </section>
+      <!-------JavaScript for Toggle menu----->
+<script>
 
-                <a href="pages/contact.html" class="main-btn">Get Started now</a>
-            </div>
-        </div>
+    var navLinks = document.getElementById("navLinks");
 
-    </header>
-    <!--=====END OF THE HEADER======-->
-  <!-- <section class="part2">
-        <div class="part2-center section-center">
-            ====PART 2 INFO====-->
-           <!--<article class="part2-info">
-                <div>
-                    <h2>Welcome to Active Youth</h2>
-                    <p class="part2-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Quibusdam nam molestias illum cum harum cumque eius voluptatibus distinctio at porro itaque
-                        incidunt repudiandae, reiciendis quisquam officiis odio accusantium tempora mollitia..</p>
-                    <a href="#" class="part2-btn">Find a Trainee</a>
-                </div>
-            </article>--> 
+    function  showMenu(){
+        navLinks.style.right = "0";
 
-            
-            <!--====END OF PART 2 INFO=====-->
-            <!--===== IMAGE 2=====-->
-           <!--<article class="part2-img">
-                <div class="part2-img-container">
-                    <img src="images/foto4.jpg" alt="" class="part2-img">
-                </div>
-            </article>-->
-            <!---====END OF IMAGE 2=====--->
-        </div>
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
 
-    </section>
+    
+</script>
+
 </body>
-
 </html>
