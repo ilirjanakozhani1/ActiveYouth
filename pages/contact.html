@@ -4,100 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-      <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="icon" href="../images/logoactiveyouth.png">
+    <title>Active Youth</title>
     <link rel="stylesheet" href="../style/contact.css">
+    <link rel="icon" href="../images/logoactiveyouth.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <!--HEADER-->
-    
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
-        <label class="logo">Dizajn</label>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="#" class="active">Contact</a></li>
-        </ul>
-    </nav>
-    
-<!--HEADER  END-->
-        <div class="contact">
-            <div class="content">
-                <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, omnis maiores dolorem voluptatum, deserunt saepe numquam, nihil aliquam enim nesciunt odit. 
-                    Doloribus ipsam sit, consequatur at dicta libero eum dolor.</p>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="../images/logoactiveyouth.png"></a>
+                <div class="nav-links " id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="programs.html">PROGRAMS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()" ></i>
+            </nav>
+        </section>
+
+
+         <!------FOOTER------>
+         <section class="footer">
+            <h4>About us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rerum possimus .</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
             </div>
+            
+        </section>
 
-            <div class="container">
-                <div class="contactInfo">
-                    <div class="box">
-                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                            <div class="text">
-                                <h3>Address</h3>
-                                <p>123 Rr.Lidhja e Prizrenit,<br>Prishtine, 10000</p>
-                            </div>
-                        </div>
+        <!-------JavaScript for Toggle menu----->
+<script>
 
-                        <div class="box">
-                            <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
-                                <div class="text">
-                                    <h3>Phone</h3>
-                                    <p>12345678</p>
-                            </div>
-                        </div>
-                        
+    var navLinks = document.getElementById("navLinks");
 
-                        <div class="box">
-                            <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                                <div class="text">
-                                    <h3>Email</h3>
-                                    <p>activeyouth@gmail.com</p>
-                                </div>
-                            </div>
-                    </div>
-                    
-                    <div class="contactForm">
-                        <form>
-                            <h2>Send Message</h2>
-                            <div class="inputBox">
-                                <input type="text" name="" required="required" placeholder="Full Name">
-                            
-                            </div>
+    function  showMenu(){
+        navLinks.style.right = "0";
 
-                            <div class="inputBox">
-                                <input type="text" name="" required="required" placeholder="Email">
-                                
-                            </div>
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
 
-                            <div class="inputBox">
-                                <textarea required="required" placeholder="Type your message"></textarea>
-                                
-                            </div>
-
-                            <div class="inputBox">
-                                <input type="submit" name="" value="Send">
-                                
-                            </div>
-
-                        </form>
-                    </div>
-                
-            </div>
-        </div>
-</body>
+    
+</script>
+    </body>
+            
 </html>
