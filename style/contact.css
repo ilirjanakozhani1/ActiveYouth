@@ -5,25 +5,31 @@
 }
 .header
 {
-    min-height: 100vh;
+    height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
-    url(images/happy_youth_.jpg);
+    url(../images/happy_youth_.jpg);
     background-position: center;
     background-size: cover;
-    position: relative;
+    text-align: center;
+    color: #f44336;
+}
+.header h1{
+    margin-top: 100px;
+    font-size: 50px;
 }
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding:2%  6%;
     justify-content: space-between;
     align-items: center;
     
+    
 }
 nav img {
-    width: 150px;
+    width: 110px;
     background-color: #fff;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .nav-links {
@@ -56,6 +62,7 @@ nav img {
 nav .fa{
     display: none;
 }
+
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
@@ -64,7 +71,7 @@ nav .fa{
         display: block;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: #f44336;
         height: 100vh;
         width: 200px;
@@ -84,4 +91,103 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
+}
+
+/*-------CONTACT US PAGE---------*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+    
+
+}
+.row{
+    display: flex;
+    flex-basis: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#f44336 ;
+    padding: 12px 34px;
+    font-size: 17px;
+    font-weight: 700;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #f44336;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+    color: #fff;
+}
+@media(max-width: 700px)
+{
+    .row{
+        display: block;
+    }
+}
+
+/*-----FOOTER------*/
+.footer{
+    width:100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f44336;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size: 35px;
+}
+.footer p{
+    color: black;
+}
+.icons .fa{
+   
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18 0 ;
 }
