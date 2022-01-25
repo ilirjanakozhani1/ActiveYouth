@@ -146,6 +146,9 @@ p{
     display: flex;
     justify-content: space-between;
 }
+.row img{
+    height: 20vh;
+}
 .activities-col{
     flex-basis: 31%;
     background: #fff3f3;
