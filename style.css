@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -62,6 +66,7 @@ nav img {
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+
 }
 .text-box h1{
     font-size: 62px;
@@ -84,11 +89,14 @@ nav img {
     background: transparent;
     position: relative;
     cursor: pointer;
+    border-radius: 20px;
 }
 .hero-btn:hover{
-    border: 1px solid #04549B;
-    background: #04549B;
-    transition: 1s;
+    border: 3px solid #1f3549;
+    transition: 0.2s;
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
 }
 nav .fa{
     display: none;
@@ -323,7 +331,7 @@ h3{
     text-align: center;
     padding: 30px 0;
     /*background-color: #1061AC;*/
-    background: #04549B;
+    background: #262b30;
 }
 .footer h4{
     margin-bottom: 25px;
