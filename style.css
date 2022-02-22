@@ -33,6 +33,7 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
+    
 }
 .nav-links ul li {
     list-style: none;
@@ -317,7 +318,7 @@ h3{
     margin-bottom: 25px;
     margin-top: 20px;
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
 }
 .footer p{
     color: #fff;
@@ -327,4 +328,16 @@ h3{
     margin: 0 13px;
     cursor: pointer;
     padding:18 0 ;
+    font-size: 20px;
+}
+/* Animation  */
+
+.word {
+    margin: auto;
+    margin-top: 3%;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    font-size: 400%;
+    font-family: 'Poppins', sans-serif;
 }
