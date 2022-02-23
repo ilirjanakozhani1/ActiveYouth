@@ -192,14 +192,14 @@ h3{
     padding-bottom: 50px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 7vh;
+    margin-bottom: 12vh;
 }
 .row{
     display: flex;
     height: 60vh;
     margin: 0;
     align-items: center;
-    padding-left: 6vh;
+    padding-left: 3vh;
 }
 
 .about-col{
