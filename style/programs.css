@@ -31,11 +31,13 @@ nav img {
     width: 110px;
     background-color: #fff;
     border-radius: 30px;
+    margin-right: 1600px;
 }
 
 .nav-links {
     flex: 1;
     text-align: right;
+    margin-top: -4.5%;
 }
 .nav-links ul li {
     list-style: none;

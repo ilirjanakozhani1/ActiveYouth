@@ -1,4 +1,4 @@
-var words = ['About Us','Rreth Ne'],
+var words = ['About Us','Rreth Ne','Qui sommes-nous','About Us','Chi Siamo', 'Hakkımızda' ,'Informatie' ],
     part,
     i = 0,
     offset = 0,
