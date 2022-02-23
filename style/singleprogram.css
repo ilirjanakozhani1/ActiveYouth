@@ -1,4 +1,181 @@
-/* Footer */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: /*linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),*/
+    url(../images/man.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box{
+    width: 90%;
+    color: #262b30;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.text-box h1{
+    font-size: 62px;
+
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #262b30;
+
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    font-weight: 600;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.hero-btn:hover{
+    border: 3px solid #1f3549;
+    transition: 0.2s;
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
+}
+
+.about-us{
+    width: 100%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7vh;
+}
+.row{
+    display: flex;
+    height: 60vh;
+    margin: 0;
+    align-items: center;
+    padding-left: 6vh;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 30px;
+}
+.col1{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(../images/basketball.jpg);
+    height: 60vh;
+    width: 90vh;
+
+}
+.col2{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(../images/learning.jpg);
+    height: 60vh;
+    width: 90vh;
+}
+.col3{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(../images/dancing.jpg);
+    height: 60vh;
+    width: 90vh;
+}
+.col4{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(../images/publication.jpg);
+    height: 60vh;
+    width: 90vh;
+}
+.about-col h2{
+    padding-top: 9%;
+    color: #fff;
+    text-align: center;
+    font-size: 5vh;
+
+
+}
+.about-col p{
+    padding-top: 9%;
+    color: #fff;
+    text-align: center;
+    font-size: 3vh;
+
+}
+/*========OUR CLASSES===========*/
+#classes{
+    background: #262b30;
+    padding: 40px;
+
+  }
+  #classes-title{
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 20px 0;
+
+  }
+  .title{
+      color: #fff;
+      font-size: 3vh;
+      text-align: center;
+      margin: 25px 0 20 0;
+  }
+  .classes-container{
+    max-width: 90vw;
+    margin: 0 auto;
+
+  }
+  .class-item{
+    background-color: #262b30;
+    color: #fff;
+    margin: 29px;
+    align-items: center;
+    right: 20px;
+  }
+ 
+
+  .class-item h4{
+    margin-top: 10px;
+    margin-left: 80px;
+    font-size: 24px;
+    text-align: left;
+  }
+  @media screen and (min-width: 576px) {
+    .classes-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+    }
+
+  }
+  @media screen and (min-width:992px) {
+    .classes-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+    }
+  }
+  /*========END OF CLASSES=====*/
+/*-----FOOTER------*/
 .footer{
     width:100%;
     text-align: center;
@@ -10,7 +187,7 @@
     margin-bottom: 25px;
     margin-top: 20px;
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
 }
 .footer p{
     color: #fff;
@@ -20,4 +197,16 @@
     margin: 0 13px;
     cursor: pointer;
     padding:18 0 ;
+    font-size: 20px;
+}
+/* Animation  */
+
+.word {
+    margin: auto;
+    margin-top: 3%;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    font-size: 400%;
+    font-family: 'Poppins', sans-serif;
 }
