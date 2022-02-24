@@ -1,4 +1,4 @@
-var words = ['About Us','Rreth Nesh'],
+var words = ['Contact Us','Na Kontaktoni' ],
     part,
     i = 0,
     offset = 0,
